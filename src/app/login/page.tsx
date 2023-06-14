@@ -36,7 +36,12 @@ import {
         </Text>
   
         <Paper withBorder shadow="md" p={30} mt={30} radius="md">
-          <TextInput label="Email" placeholder="exemplo@email.com" required />
+          <TextInput
+            label="Email"
+            placeholder="exemplo@email.com"
+            required
+            onChange={(e) => console.log(e.target)}
+            />
           <PasswordInput
             label="Senha"
             placeholder="Sua senha"
